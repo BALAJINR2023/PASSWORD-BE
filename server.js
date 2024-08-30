@@ -1,11 +1,11 @@
 import express from 'express';
 import cors from 'cors';
-import connectDB from './db/mongo.js';
 import MongooseconnectDB from './db/Mongoose.js';
 import registerRouter from './routes/auth/register.js';
 import loginRouter from './routes/auth/login.js';
 import forgotPasswordRouter from './routes/auth/forgotpass.js';
 import resetPasswordRouter from './routes/auth/reset.js';
+import connectDB from './db/Mongo.js';
 const server = express();
 
 server.use(express.json());
